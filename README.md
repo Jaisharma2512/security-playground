@@ -78,13 +78,13 @@ This command writes the string hello-world to /bin/hello.
 To execute a command, send a `POST` request to the `/exec` endpoint with the command as the payload.
 
 ```bash
-$ curl -X POST <URL>:8080/exec -d 'command=<CMD>'
+$ curl -X POST <URL>:8081/exec -d 'command=<CMD>'
 ```
 
 For example:
 
 ```bash
-$ curl -X POST localhost:8080/exec -d 'command=ls'
+$ curl -X POST localhost:8081/exec -d 'command=ls'
 ```
 
 This will run the command and return its STDOUT output.

@@ -6,7 +6,6 @@ pipeline{
         REPO= 'juneserver'
      }
     stages{
-        stage(){
             stage('Build'){
                               steps{
                                        echo 'Code is pushed' 
